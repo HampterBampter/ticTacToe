@@ -1,4 +1,6 @@
 body {
+  align-content: center;
+  text-align: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -14,11 +16,28 @@ code {
 }
 
 .square {
+  display: inline-block;
+  width: 12vw;
+  height: 12vw;
   text-align: center;
-  font-size: 2em;
-  height: 5em;
-  width: 5em;
+  vertical-align: middle;
+  line-height: 12vw;
+  font-size: 10vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.square button {
+  width: 100%;
+  height: 100%;
   padding: 0;
-  vertical-align: top;
-  justify-content: center;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ol{
+  list-style-type: none;
 }
